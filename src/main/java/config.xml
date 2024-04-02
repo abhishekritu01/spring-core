@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- ======================================== 1st type to implement been ==================================    -->
+<!--    <bean id="student" class="com.spring.Student">-->
+<!--        <property name="studentId">-->
+<!--            <value>1</value>-->
+<!--        </property>-->
+<!--        <property name="studentName">-->
+<!--            <value>John</value>-->
+<!--        </property>-->
+<!--        <property name="studentAddress" >-->
+<!--            <value>USA</value>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+
+<!-- ======================================== 2nd type to implement as attribute ==================================    -->
+
+<!--    <bean id="student" class="com.spring.Student">-->
+<!--        <property name="studentId" value="1"/>-->
+<!--        <property name="studentName" value="Abhishek"/>-->
+<!--        <property name="studentAddress" value="India"/>-->
+<!--    </bean>-->
+<!--    <bean id="student1" class="com.spring.Student">-->
+<!--        <property name="studentId" value="2"/>-->
+<!--        <property name="studentName" value="Arnav"/>-->
+<!--        <property name="studentAddress" value="India"/>-->
+<!--    </bean>-->
+
+<!-- ======================================== 3rd type to implement as p schema ==================================    -->
+
+<bean id="student" class="com.spring.Student" p:studentId="1" p:studentName="Abhishek" p:studentAddress="India"/>
+<bean id="student1" class="com.spring.Student" p:studentId="2" p:studentName="Arnav" p:studentAddress="India"/>
+
+
+</beans>
