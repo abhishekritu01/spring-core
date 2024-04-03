@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    ================== 1 method ====================-->
-    <bean name="Emp1" class="com.springcore.collection.Employee">
+    <bean name="Emp1" class="com.collection.Employee">
         <property name="name" value="bhavika"></property>
         <property name="phones">
             <list>

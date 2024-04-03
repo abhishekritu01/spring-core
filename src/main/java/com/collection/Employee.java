@@ -1,6 +1,7 @@
-package com.springcore.collection;
+package com.collection;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class Employee {
               //-------------     implementation of collection
@@ -8,6 +9,8 @@ public class Employee {
     private List <String> phones;
     private List <String> addresses;
     private Map<String,String> course;
+
+    private Properties props;
 
 
     // getter and setter methods
@@ -31,12 +34,21 @@ public class Employee {
         this.addresses = addresses;
     }
 
+
     public void getCourse() {
         System.out.println("Course: "+course);
     }
 
     public void setCourse(Map<String, String> course) {
         this.course = course;
+    }
+
+    public Properties getProps() {
+        return props;
+    }
+
+    public void setProps(Properties props) {
+        this.props = props;
     }
 
     // constructor
@@ -46,6 +58,7 @@ public class Employee {
         this.phones = phones;
         this.addresses = addresses;
         this.course = course;
+        this.props = props;
     }
 
     public Employee() {
