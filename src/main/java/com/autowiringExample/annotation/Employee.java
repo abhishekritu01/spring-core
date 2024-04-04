@@ -1,5 +1,4 @@
 package com.autowiringExample.annotation;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -14,6 +13,7 @@ public class Employee {
 
 
     public Address getAddress() {
+
         return address;
     }
 
