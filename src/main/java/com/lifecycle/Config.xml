@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<!--    allow all annotation-->
+    <context:annotation-config/>
+
+
+<!--       ========== lifecycle method  1. using xml ==============-->
+    <bean class="com.lifecycle.Samousa" name="samousa-1" init-method="init"  destroy-method="destroy">
+        <property name="price" value="10"></property>
+    </bean>
+
+<!--    ====================== 2.using interface =============-->
+
+    <bean class="com.lifecycle.Pepsi" name="pepsi" >
+        <property name="price" value="20"></property>
+    </bean>
+
+<!--    ======================= 3 using Annotation===============    -->
+    <bean class="com.lifecycle.ExampleAnnotation" name="example" >
+        <property name="subject" value="core java" />
+    </bean>
+
+
+</beans>

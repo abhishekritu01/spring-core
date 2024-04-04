@@ -10,6 +10,11 @@ public class Test {
         ApplicationContext context = new FileSystemXmlApplicationContext("src/main/java/com/constructiorinjuction/config.xml");
         Person person = (Person) context.getBean("person");
 
+
+        Addition add=(Addition)  context.getBean("person1");
+
+        add.doSum();
+
         person.display();
 
 
