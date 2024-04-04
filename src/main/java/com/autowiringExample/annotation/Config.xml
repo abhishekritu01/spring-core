@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+<!--    ==================using Autowiring =================-->
+    <bean class="com.autowiringExample.annotation.Address" name="address" >
+        <property name="city" value="Pune" />
+        <property name="street" value="Maharashtra" />
+    </bean>
+
+<bean class="com.autowiringExample.annotation.Address" name="address2" >
+        <property name="city" value="Bangalore" />
+        <property name="street" value="Karanatka" />
+    </bean>
+
+<!--    <bean class="com.autowiringExample.Employee" name="employee" autowire="byName" />-->
+<!--    <bean class="com.autowiringExample.Employee" name="employee" autowire="byType" />-->
+    <bean class="com.autowiringExample.annotation.Employee" name="employee"/>
+
+
+
+</beans>
